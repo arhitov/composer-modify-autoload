@@ -1,0 +1,1 @@
+# composer-modify-autoload
