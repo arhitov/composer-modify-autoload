@@ -24,7 +24,7 @@ Autorun script after composer update
  // ... 
   "scripts": {
     "post-autoload-dump": [
-      "php vendor/bin/composer-modify-autoload.php"
+      "@php vendor/bin/composer-modify-autoload.php"
     ]
   }
  // ...
