@@ -1,7 +1,7 @@
 # composer-modify-autoload
 
-Updates the vendor/autoload.php so it manually includes any files specified in composer.json's files array.
-See https://github.com/composer/composer/issues/6768
+Simple library for updated the vendor/autoload.php so it manually includes any files specified in composer.json's files array.
+See [composer issues #6768](https://github.com/composer/composer/issues/6768)
 
 ## composer.json
 
@@ -24,9 +24,11 @@ Autorun script after composer update
  // ... 
   "scripts": {
     "post-autoload-dump": [
-      "php modify_autoload.php"
+      "php vendor/bin/composer-modify-autoload.php"
     ]
   }
  // ...
 }
 ```
+
+See also [funkjedi/composer-include-files](https://github.com/funkjedi/composer-include-files)
